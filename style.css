@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    align-items: center;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-cont{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 50rem;
+    margin: auto;
+}
+
+
+.sedan-div{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+}
+
+.suv-div{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-div{
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+.cardbox{
+    padding: 2rem;
+}
+
+.cardbox h1{
+    color: white;
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding: 1rem 0rem;
+}
+
+.cardbox p{
+    color: white;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.7;
+}
+
+.cardbox a{
+    background-color: white;
+    border-radius: 1.5rem;
+    display: inline-block;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 3.5rem;
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px){
+    .main-cont{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 4rem 1.5rem;
+    }
+
+    .sedan-div{
+        border-top-right-radius: 0.7rem;
+        border-top-left-radius: 0.7rem;
+        border-bottom-left-radius: 0;
+    }
+
+    .luxury-div{
+        border-bottom-right-radius: 0.7rem;
+        border-bottom-left-radius: 0.7rem;
+        border-top-right-radius: 0;
+    }
+}
+
+.together{
+    display: flex;
+    flex-direction: row;
+}
+
+.sedan-img{
+    height: 30px;
+    
+}
